@@ -14,7 +14,7 @@ Registro de 03/11/2026. Hoje é dedicado à preparação e às decisões; iníci
 
 ## Escolhas operacionais do assistente
 
-- Nome inicial do repositório: p0-checklist-enunciados; pode ser ajustado pelo aluno.
+- Nome definitivo escolhido pelo aluno em 03/11/2026: **Descomplica Enunciado**, repositório `descomplica-enunciado`.
 - Branch principal: main. Evolução em branches curtas com PRs.
 - Preservar histórico real. Criar os marcos p0-basico, p0-intermediario e p0-avancado somente quando os respectivos estados existirem e forem verificados.
 - Publicar documentação autoral. Materiais autenticados do curso permanecem na base local.
