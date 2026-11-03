@@ -11,6 +11,8 @@ Registro de 03/11/2026. Hoje é dedicado à preparação e às decisões; iníci
 | Apresentar trecho de apoio para cada item extraído | Apenas apresentar a lista resumida | Facilitar a conferência da origem das informações. |
 | Usar o LLM institucional | Outro provedor | Aproveitar o recurso oferecido pelo programa; confirmar disponibilidade e acesso. |
 | Criar o repositório e decidir hoje; implementar a partir de amanhã | Começar o código imediatamente | Separar a definição do trabalho da implementação, conforme preferência do aluno. |
+| Encerrar a entrada com `FIM` em uma linha isolada | Encerramento sem marcador explícito | Permitir colar um enunciado com várias linhas; o marcador não integra o texto enviado. |
+| Sinalizar itens com citação não localizada como “Não foi possível verificar no enunciado” | Descartar o item ou chamá-lo apenas de “não verificado” | Explicitar a limitação e permitir revisão humana, sem tratar o item como requisito confirmado. |
 
 ## Escolhas operacionais do assistente
 
@@ -21,8 +23,10 @@ Registro de 03/11/2026. Hoje é dedicado à preparação e às decisões; iníci
 
 ## Propostas técnicas ainda a fechar
 
+A definição do problema, público, entrada, saída e limites está fechada para iniciar o desenvolvimento. As pendências abaixo são técnicas e não representam uma nova escolha de problema.
+
 - Separar entrada, configuração, preparação da solicitação, chamada ao LLM, validação e apresentação, sem abstrações desnecessárias.
-- Verificar localmente se os trechos de apoio existem no texto de entrada. Isso não comprova a correção semântica da interpretação.
+- Detalhar a verificação local dos trechos de apoio. O objetivo é obter citações fiéis; o aviso acordado é uma proteção para desvios, não um resultado desejado. A existência do trecho não comprova a correção semântica da interpretação.
 - Definir formato interno da resposta e comportamento quando a saída do modelo for inválida; não presumir suporte nativo a JSON.
 - Definir limite de entrada e parâmetros após conhecer a interface institucional.
 - Selecionar versão do Python e dependências após confirmar o acesso; não instalar dependências nesta etapa.
@@ -40,4 +44,4 @@ O enunciado do P0 foi escolhido como primeiro exemplo local. Isso não autoriza 
 3. Preparar ambiente Python e executar a menor chamada real com texto fictício.
 4. Construir o fluxo básico, documentando execução e mantendo commits progressivos.
 
-O registro inicial do repositório no Moodle permanece pendente de solicitação do aluno. Criar o repositório não realiza essa submissão.
+O aluno informou em 03/11/2026 que já realizou o registro inicial do repositório no Moodle. Informação fornecida pelo aluno, sem nova conferência da atividade pelo assistente.
