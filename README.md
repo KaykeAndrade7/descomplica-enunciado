@@ -1,4 +1,4 @@
-# Checklist de enunciados
+# Descomplica Enunciado
 
 Projeto P0 — TrendsIA, de Kayke Andrade.
 
