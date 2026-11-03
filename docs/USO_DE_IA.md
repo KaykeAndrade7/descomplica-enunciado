@@ -4,8 +4,8 @@
 
 - Ferramenta: Codex; identificador exato do modelo não informado pela interface.
 - Tarefas: propor problemas, apoiar a delimitação e registrar decisões; preparar o repositório.
-- Resultado aproveitado: checklist de enunciados com entregáveis, requisitos/restrições, prazos explícitos e dúvidas, com trechos de apoio; entrada manual no terminal.
-- Revisões e alternativas descartadas: o aluno descartou organização de anotações e temas de desenvolvimento de jogos; escolheu manter referências ao texto e usar o LLM institucional, com acesso a confirmar.
+- Resultado aproveitado: checklist de enunciados com entregáveis, requisitos/restrições, prazos explícitos e dúvidas, com trechos de apoio; entrada manual no terminal, encerrada por `FIM` em linha isolada.
+- Revisões e alternativas descartadas: o aluno descartou organização de anotações e temas de desenvolvimento de jogos; escolheu manter referências ao texto e usar o LLM institucional, com acesso a confirmar. Ajustou o aviso de citação não localizada para “Não foi possível verificar no enunciado” e escolheu o nome Descomplica Enunciado.
 - Verificação: problema, formato e escopo confirmados pelo aluno na conversa. Documentação inicial conferida contra essas decisões. Ainda não há código, testes executados ou evidências de funcionamento.
 - Próxima revisão: o aluno deve ler os documentos iniciais e validar as escolhas operacionais propostas antes da implementação.
 
