@@ -13,6 +13,8 @@ Registro de 03/11/2026. Hoje é dedicado à preparação e às decisões; iníci
 | Criar o repositório e decidir hoje; implementar a partir de amanhã | Começar o código imediatamente | Separar a definição do trabalho da implementação, conforme preferência do aluno. |
 | Encerrar a entrada com `FIM` em uma linha isolada | Encerramento sem marcador explícito | Permitir colar um enunciado com várias linhas; o marcador não integra o texto enviado. |
 | Sinalizar itens com citação não localizada como “Não foi possível verificar no enunciado” | Descartar o item ou chamá-lo apenas de “não verificado” | Explicitar a limitação e permitir revisão humana, sem tratar o item como requisito confirmado. |
+| Organizar trabalho com Project, milestones, issues e PRs vinculados | Controle apenas pela documentação | Acompanhar o progresso dos três níveis e ligar mudanças a tarefas verificáveis. |
+| Começar pelo contrato de entrada e avaliação offline | Integrar imediatamente um provedor alternativo | Preparar exemplos e critérios enquanto o institucional não está disponível; alternativa externa continua opcional. |
 
 ## Escolhas operacionais do assistente
 
@@ -39,9 +41,11 @@ O enunciado do P0 foi escolhido como primeiro exemplo local. Isso não autoriza 
 
 ## Próxima sessão — 04/11/2026
 
-1. Confirmar acesso ao LLM institucional: endereço, modelo, autenticação, interface e limites efetivamente disponíveis.
-2. Fechar o desenho técnico mínimo e os critérios dos primeiros testes com o aluno.
-3. Preparar ambiente Python e executar a menor chamada real com texto fictício.
-4. Construir o fluxo básico, documentando execução e mantendo commits progressivos.
+1. Iniciar pela issue #1: contrato de entrada, exemplos fictícios e critérios de avaliação revisados com o aluno.
+2. Preparar o fluxo local e testes offline pela issue #2.
+3. Acompanhar liberação institucional. O aluno informou que ainda não está disponível e que a liberação será anunciada; relato não reconferido pelo assistente. Decidir eventual alternativa apenas quando necessária.
+4. Integrar o LLM pela issue #3 quando houver acesso e interface confirmados; somente então validar o fluxo real e concluir o Básico.
+
+Ver [organização do desenvolvimento](ORGANIZACAO.md) para o quadro, as dez issues e o fluxo de releases.
 
 O aluno informou em 03/11/2026 que já realizou o registro inicial do repositório no Moodle. Informação fornecida pelo aluno, sem nova conferência da atividade pelo assistente.
