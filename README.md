@@ -30,5 +30,6 @@ Um LLM será utilizado para interpretar instruções com redações variadas e r
 
 - [Decisões e próximos passos](docs/DECISOES.md)
 - [Registro de uso de IA](docs/USO_DE_IA.md)
+- [Organização: Project, issues, milestones e releases](docs/ORGANIZACAO.md)
 
 Instalação, configuração, execução e testes serão documentados conforme forem implementados e verificados. Exemplos públicos serão fictícios ou autorizados para divulgação.
