@@ -14,6 +14,8 @@ Aplicação Python local que recebe um enunciado colado no terminal e apresenta 
 
 Cada item extraído deve incluir um trecho de apoio copiado do texto recebido. Informações ausentes serão indicadas como “não identificado no texto”; ambiguidades serão sinalizadas. A lista não declara que uma exigência já foi cumprida.
 
+A entrada será encerrada com `FIM` em uma linha isolada. Se um trecho de apoio não for localizado no texto recebido, o item terá o aviso “Não foi possível verificar no enunciado” e não será apresentado como requisito confirmado. O objetivo é produzir citações fiéis; essa verificação é uma proteção para eventuais erros.
+
 Um LLM será utilizado para interpretar instruções com redações variadas e reunir requisitos espalhados pelo texto. A conferência final permanece com o estudante.
 
 ## Escopo
