@@ -1,0 +1,234 @@
+{
+  "status": "conferido",
+  "data": "2026-11-04",
+  "origem": "Enunciados fictícios criados para avaliação do projeto; não são materiais do curso.",
+  "casos": [
+    {
+      "id": "C01",
+      "tema": "Obrigações explícitas",
+      "entrada": "Crie um programa Python que leia uma lista de números e mostre a média.\nEntregue o código-fonte e um README com instruções de execução.\nEnvie os arquivos até 18/11/2026 às 23h59.",
+      "itens": [
+        {
+          "id": "E1",
+          "categoria": "entregavel",
+          "descricao": "Código-fonte do programa",
+          "trecho": "Entregue o código-fonte"
+        },
+        {
+          "id": "E2",
+          "categoria": "entregavel",
+          "descricao": "README com instruções de execução",
+          "trecho": "um README com instruções de execução."
+        },
+        {
+          "id": "R1",
+          "categoria": "requisito",
+          "descricao": "Usar Python, ler uma lista de números e mostrar a média",
+          "trecho": "Crie um programa Python que leia uma lista de números e mostre a média."
+        },
+        {
+          "id": "P1",
+          "categoria": "prazo",
+          "descricao": "Envio até 18/11/2026 às 23h59; fuso não informado",
+          "trecho": "Envie os arquivos até 18/11/2026 às 23h59."
+        }
+      ],
+      "duvidas": [
+        "Fuso do horário não identificado no texto."
+      ],
+      "nao_inventar": [
+        "Quantidade mínima de números",
+        "Formato de arquivo da lista",
+        "Fuso horário"
+      ]
+    },
+    {
+      "id": "C02",
+      "tema": "Recomendação e obrigação",
+      "entrada": "Entregue um relatório em PDF com a análise dos resultados.\nVocê pode incluir gráficos, mas eles são opcionais.\nRecomenda-se usar uma planilha para organizar os dados.\nNão é necessário entregar a planilha.",
+      "itens": [
+        {
+          "id": "E1",
+          "categoria": "entregavel",
+          "descricao": "Relatório em PDF com análise dos resultados",
+          "trecho": "Entregue um relatório em PDF com a análise dos resultados."
+        },
+        {
+          "id": "O1",
+          "categoria": "opcional",
+          "descricao": "Gráficos opcionais, não obrigatórios",
+          "trecho": "Você pode incluir gráficos, mas eles são opcionais."
+        },
+        {
+          "id": "O2",
+          "categoria": "opcional",
+          "descricao": "Uso de planilha recomendado, não obrigatório",
+          "trecho": "Recomenda-se usar uma planilha para organizar os dados."
+        }
+      ],
+      "duvidas": [
+        "Prazo não identificado no texto."
+      ],
+      "nao_inventar": [
+        "Gráficos obrigatórios",
+        "Uso obrigatório de planilha",
+        "Entrega obrigatória de planilha"
+      ],
+      "observacao": "Mostrar gráficos e uso da planilha como opcionais, com apoio literal; informar que a planilha não precisa ser entregue. Não converter essas menções em exigências."
+    },
+    {
+      "id": "C03",
+      "tema": "Informações ausentes",
+      "entrada": "Escreva uma reflexão sobre o que aprendeu no experimento.\nInclua uma dificuldade encontrada e como você a enfrentou.",
+      "itens": [
+        {
+          "id": "E1",
+          "categoria": "entregavel",
+          "descricao": "Reflexão sobre o aprendizado no experimento",
+          "trecho": "Escreva uma reflexão sobre o que aprendeu no experimento."
+        },
+        {
+          "id": "R1",
+          "categoria": "requisito",
+          "descricao": "Incluir dificuldade encontrada e como foi enfrentada",
+          "trecho": "Inclua uma dificuldade encontrada e como você a enfrentou."
+        }
+      ],
+      "duvidas": [
+        "Prazo não identificado no texto.",
+        "Formato de entrega não identificado no texto."
+      ],
+      "nao_inventar": [
+        "PDF",
+        "Número de páginas",
+        "Data de entrega"
+      ]
+    },
+    {
+      "id": "C04",
+      "tema": "Prazos conflitantes",
+      "entrada": "Entregue uma apresentação sobre o experimento.\nA entrega deve ser feita até 20/11/2026.\nEm outra seção deste mesmo enunciado consta: prazo final em 22/11/2026.",
+      "itens": [
+        {
+          "id": "E1",
+          "categoria": "entregavel",
+          "descricao": "Apresentação sobre o experimento",
+          "trecho": "Entregue uma apresentação sobre o experimento."
+        },
+        {
+          "id": "P1",
+          "categoria": "prazo_ambiguo",
+          "descricao": "Primeira data mencionada: 20/11/2026; não confirmar como definitiva",
+          "trecho": "A entrega deve ser feita até 20/11/2026."
+        },
+        {
+          "id": "P2",
+          "categoria": "prazo_ambiguo",
+          "descricao": "Outra data mencionada: 22/11/2026; não confirmar como definitiva",
+          "trecho": "Em outra seção deste mesmo enunciado consta: prazo final em 22/11/2026."
+        }
+      ],
+      "duvidas": [
+        "Há conflito entre as datas; confirmar qual prazo se aplica."
+      ],
+      "nao_inventar": [
+        "A última data substitui automaticamente a anterior",
+        "Uma das datas é definitiva"
+      ]
+    },
+    {
+      "id": "C05",
+      "tema": "Duração e entrega parcial",
+      "entrada": "O desenvolvimento está previsto para durar duas semanas.\nEntregue um protótipo navegável e um relato das decisões.\nA demonstração deve acontecer em até cinco minutos.\nO prazo de envio será divulgado depois.",
+      "itens": [
+        {
+          "id": "E1",
+          "categoria": "entregavel",
+          "descricao": "Protótipo navegável",
+          "trecho": "Entregue um protótipo navegável"
+        },
+        {
+          "id": "E2",
+          "categoria": "entregavel",
+          "descricao": "Relato das decisões",
+          "trecho": "um relato das decisões."
+        },
+        {
+          "id": "R1",
+          "categoria": "requisito",
+          "descricao": "Demonstração de no máximo cinco minutos",
+          "trecho": "A demonstração deve acontecer em até cinco minutos."
+        },
+        {
+          "id": "D1",
+          "categoria": "duracao_prevista",
+          "descricao": "Duas semanas como estimativa de desenvolvimento, não como prazo de envio",
+          "trecho": "O desenvolvimento está previsto para durar duas semanas."
+        }
+      ],
+      "duvidas": [
+        "Data de envio ainda não divulgada no texto."
+      ],
+      "nao_inventar": [
+        "Data calculada a partir de hoje",
+        "Duas semanas como prazo oficial",
+        "Obrigatoriedade de vídeo gravado"
+      ],
+      "observacao": "Mostrar duas semanas como duração prevista, separada do prazo de envio, sem calcular vencimento."
+    },
+    {
+      "id": "C06",
+      "tema": "Requisitos espalhados e condicionais",
+      "entrada": "Prepare uma análise de um conjunto de dados público.\nVocê pode trabalhar sozinho ou em dupla.\nAo final, entregue um notebook e uma conclusão em texto.\nO notebook deve executar do início ao fim.\nSe houver valores ausentes, explique no texto como foram tratados.\nA conclusão deve mencionar uma limitação da análise.",
+      "itens": [
+        {
+          "id": "R1",
+          "categoria": "requisito",
+          "descricao": "Analisar um conjunto de dados público",
+          "trecho": "Prepare uma análise de um conjunto de dados público."
+        },
+        {
+          "id": "E1",
+          "categoria": "entregavel",
+          "descricao": "Notebook executável do início ao fim",
+          "trecho": "O notebook deve executar do início ao fim."
+        },
+        {
+          "id": "E2",
+          "categoria": "entregavel",
+          "descricao": "Conclusão em texto",
+          "trecho": "Ao final, entregue um notebook e uma conclusão em texto."
+        },
+        {
+          "id": "R2",
+          "categoria": "requisito_condicional",
+          "descricao": "Explicar tratamento dos valores ausentes se houver",
+          "trecho": "Se houver valores ausentes, explique no texto como foram tratados."
+        },
+        {
+          "id": "R3",
+          "categoria": "requisito",
+          "descricao": "Mencionar uma limitação na conclusão",
+          "trecho": "A conclusão deve mencionar uma limitação da análise."
+        }
+      ],
+      "duvidas": [
+        "Prazo não identificado no texto."
+      ],
+      "nao_inventar": [
+        "Trabalho obrigatoriamente em dupla",
+        "Existência confirmada de valores ausentes",
+        "Uso obrigatório de pandas"
+      ],
+      "observacao": "Preservar condição de R2; não afirmar que os dados têm valores ausentes."
+    }
+  ],
+  "formato_resposta": [
+    "objetivo",
+    "entregaveis_e_requisitos",
+    "prazo",
+    "pontos_a_esclarecer"
+  ],
+  "mensagem_objetivo_ausente": "Objetivo não identificado claramente no texto",
+  "mensagem_prazo_ausente": "Prazo não identificado no texto"
+}
