@@ -16,6 +16,7 @@ Atualizado em 04/11/2026 com as decisões de entrada. A implementação pertence
 |---|---|
 | `FIM`, `fim`, `Fim`, `fIm` ou `  fim  ` em linha isolada | Encerrar a coleta, ignorando diferenças de caixa e espaços nas pontas. |
 | fim dentro de uma frase | Preservar como conteúdo do enunciado. |
+| Fim da entrada antes do marcador (EOF) | Concluir a coleta com o texto recebido e aplicar as mesmas validações de conteúdo e tamanho. |
 | Linhas vazias dentro do texto | Preservar, inclusive separação entre parágrafos. |
 | Espaços, acentos e pontuação | Preservar. Normalizar apenas quebras de linha para `\n`. |
 | Entrada sem nenhum caractere além de espaços/quebras | Impedir análise e mostrar “O enunciado está vazio.”; oferecer 1 — Tentar novamente ou 2 — Sair. |
@@ -32,7 +33,7 @@ Limitação do marcador: uma linha do próprio enunciado contendo apenas uma var
 
 Após entrada vazia ou grande demais, a opção 1 inicia uma nova coleta e a opção 2 encerra. Oferecer nova tentativa quando repetir ou corrigir a entrada puder resolver a falha. Para configuração ausente ou credencial inválida, explicar a correção necessária e encerrar, sem repetir inutilmente a mesma chamada. Detalhes de comunicação serão tratados nas próximas issues.
 
-Ainda falta definir o comportamento de uma opção de menu diferente de 1 ou 2 e de EOF antes do marcador. Esses detalhes não são decisões já aprovadas.
+Se a opção for diferente de 1 ou 2, mostrar “Opção inválida. Digite 1 ou 2.” e repetir o menu.
 
 ## O que validar localmente e o que avaliar depois
 
@@ -48,8 +49,10 @@ Não tratar o enunciado como instrução para alterar o funcionamento da aplica�
 - Entrada vazia e somente espaços impedidas.
 - Exatamente 10.000 caracteres aceitos e 10.001 rejeitados, com tamanho recebido informado.
 - Ocorrência de FIM dentro de frase preservada.
+- Fim da entrada antes do marcador aceita texto válido e aplica as validações de conteúdo e tamanho.
 - Variações de fim com espaços nas pontas e diferenças entre maiúsculas/minúsculas reconhecidas.
 - Nova entrada após recusa e encerramento pela opção 2.
+- Opção inválida mostra a orientação e reapresenta o menu.
 - Ctrl+C durante a digitação não dispara análise parcial; resultado concluído permanece visível após encerramento.
 
 ## Conferência da issue #1
