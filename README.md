@@ -2,7 +2,7 @@
 
 Projeto P0 — TrendsIA, de Kayke Andrade.
 
-**Estado em 03/11/2026:** definição do problema e decisões iniciais. A implementação está prevista para começar em 04/11/2026; ainda não há aplicação executável ou resultados de testes.
+**Estado atual** — Demonstração local no terminal com resposta simulada para o caso fictício C01.
 
 ## Problema
 
@@ -28,8 +28,44 @@ Um LLM será utilizado para interpretar instruções com redações variadas e r
 
 ## Documentação
 
+### Executar a demonstração
+
+Na pasta do projeto, use Python 3.10 ou superior. A demonstração usa apenas a biblioteca padrão e foi verificada no Python 3.13.
+
+```bat
+python -B main.py
+```
+
+Cole o exemplo abaixo e finalize com `fim` em uma linha separada.
+
+```text
+Crie um programa Python que leia uma lista de números e mostre a média.
+Entregue o código-fonte e um README com instruções de execução.
+Envie os arquivos até 18/11/2026 às 23h59.
+fim
+```
+
+O terminal exibe **Resposta simulada — C01**, seguida de objetivo, entregáveis e requisitos, prazo e pontos a esclarecer. O checklist vem do [gabarito do C01](docs/EXEMPLO_RESPOSTA.md). Para outro enunciado válido, o terminal informa que a demonstração usa o C01.
+
+### Verificações locais
+
+| Cenário | Resultado observado |
+|---|---|
+| Várias linhas com acentos, espaços e linhas em branco | Conteúdo preservado até o marcador. |
+| Entrada termina sem marcador | O leitor devolve o conteúdo recebido. |
+| Entrada vazia, apenas espaços ou quebras | A validação informa que o enunciado está vazio. |
+| 10.000 e 10.001 caracteres | O primeiro é aceito. O segundo é recusado com a contagem e o limite. |
+| Opção inválida, nova tentativa e saída | O menu se repete após opção inválida. A opção 1 recebe novo texto e a opção 2 encerra. |
+| Interrupção simulada por Ctrl+C | O programa informa que a entrada foi cancelada. |
+| C01 e enunciado diferente | O primeiro exibe o checklist simulado. O segundo recebe o aviso da demonstração. |
+| Citação presente e citação inventada para o teste | A primeira é preservada. A segunda é substituída por “Não foi possível verificar no enunciado”. |
+
+As verificações usam texto fictício e execução local. A conferência de citações verifica a presença literal do trecho. A interpretação é avaliada pelos critérios e exemplos do projeto.
+
+### Referências do projeto
+
 - [Decisões e próximos passos](docs/DECISOES.md)
 - [Registro de uso de IA](docs/USO_DE_IA.md)
 - [Organização: Project, issues, milestones e releases](docs/ORGANIZACAO.md)
-
-Instalação, configuração, execução e testes serão documentados conforme forem implementados e verificados. Exemplos públicos serão fictícios ou autorizados para divulgação.
+- [Contrato de entrada](docs/CONTRATO_ENTRADA.md)
+- [Formato da resposta e critérios de avaliação](docs/AVALIACAO.md)
