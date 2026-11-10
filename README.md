@@ -2,7 +2,7 @@
 
 Projeto P0 — TrendsIA, de Kayke Andrade.
 
-**Estado atual** — Demonstração local no terminal com resposta simulada para o caso fictício C01.
+**Estado atual** — Demonstração local no terminal com resposta simulada e página de teste na Devel que obteve respostas reais do Ollama para o caso fictício C01.
 
 ## Problema
 
@@ -21,9 +21,9 @@ Um LLM será utilizado para interpretar instruções com redações variadas e r
 ## Escopo
 
 - Um enunciado textual por execução, inserido manualmente no terminal.
-- Um único LLM, preferencialmente o institucional; acesso técnico a confirmar.
+- Um único LLM, o Ollama institucional nos testes na Devel.
 - Sem leitura de PDF ou acesso a links.
-- Sem interface web, banco de dados ou agentes.
+- A página web é usada para testar a integração na Devel. O fluxo de uso no terminal é o foco do projeto.
 - Sem inventar obrigações ou transformar estimativas de duração em datas de entrega.
 
 ## Documentação
@@ -65,6 +65,7 @@ As verificações usam texto fictício e execução local. A conferência de cit
 ### Referências do projeto
 
 - [Decisões e próximos passos](docs/DECISOES.md)
+- [Evolução do projeto e testes na Devel](docs/EVOLUCAO.md)
 - [Registro de uso de IA](docs/USO_DE_IA.md)
 - [Organização: Project, issues, milestones e releases](docs/ORGANIZACAO.md)
 - [Contrato de entrada](docs/CONTRATO_ENTRADA.md)
