@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!teste_devel.py
+!ollama_cliente.py
+!examples/
+examples/*
+!examples/casos_avaliacao.json
