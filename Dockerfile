@@ -5,7 +5,7 @@ ARG OLLAMA_URL
 ARG OLLAMA_MODELO
 ENV OLLAMA_URL=${OLLAMA_URL} OLLAMA_MODELO=${OLLAMA_MODELO}
 
-COPY teste_devel.py ollama_cliente.py ./
+COPY teste_devel.py analise.py entrada.py ollama_cliente.py prompt.py ./
 COPY examples/casos_avaliacao.json examples/
 
 EXPOSE 8080

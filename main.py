@@ -1,17 +1,9 @@
 import json
-import re
+import sys
 from pathlib import Path
 
+from analise import MENSAGEM_SEM_CONFIGURACAO, analisar_enunciado, verificar_trechos_de_apoio
 from entrada import ler_enunciado, validar_enunciado
-
-
-def verificar_trechos_de_apoio(enunciado: str, resposta: str) -> str:
-    def conferir(citacao: re.Match[str]) -> str:
-        if citacao.group(1) in enunciado:
-            return citacao.group(0)
-        return "[Não foi possível verificar no enunciado]"
-
-    return re.sub(r"“([^”]+)”", conferir, resposta)
 
 
 def mostrar_resposta_simulada(texto: str) -> None:
@@ -31,6 +23,23 @@ def mostrar_resposta_simulada(texto: str) -> None:
     print(verificar_trechos_de_apoio(texto, resposta[inicio:].rstrip()))
 
 
+def consultar_modelo(texto: str) -> str | None:
+    """Envia o enunciado ao modelo. Devolve o checklist ou None se algo falhar."""
+    print("Consultando o modelo; isso pode levar alguns segundos...")
+    checklist, erro = analisar_enunciado(texto)
+    if erro is not None:
+        print(erro)
+        if erro == MENSAGEM_SEM_CONFIGURACAO:
+            print("Para ver a demonstração sem o modelo, use: python main.py --simulado")
+        return None
+    return checklist
+
+
+def mostrar_resposta_do_modelo(checklist: str) -> None:
+    print("\nChecklist gerado pelo modelo. Confira cada item no enunciado original.\n")
+    print(checklist)
+
+
 def tentar_novamente() -> bool:
     while True:
         print("1 — Tentar novamente")
@@ -46,6 +55,7 @@ def tentar_novamente() -> bool:
 
 
 def main() -> None:
+    simulado = "--simulado" in sys.argv[1:]
     try:
         while True:
             print("Cole o enunciado e digite fim em uma linha separada.")
@@ -53,7 +63,13 @@ def main() -> None:
             erro = validar_enunciado(texto)
 
             if erro is None:
-                mostrar_resposta_simulada(texto)
+                if simulado:
+                    mostrar_resposta_simulada(texto)
+                    return
+                checklist = consultar_modelo(texto)
+                if checklist is None:
+                    sys.exit(1)
+                mostrar_resposta_do_modelo(checklist)
                 return
 
             print(erro)

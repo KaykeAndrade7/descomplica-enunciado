@@ -16,6 +16,14 @@ Registro de 03/11/2026. Hoje é dedicado à preparação e às decisões; iníci
 | Organizar trabalho com Project, milestones, issues e PRs vinculados | Controle apenas pela documentação | Acompanhar o progresso dos três níveis e ligar mudanças a tarefas verificáveis. |
 | Começar pelo contrato de entrada e avaliação offline | Integrar imediatamente um provedor alternativo | Preparar exemplos e critérios enquanto o institucional não está disponível; alternativa externa continua opcional. |
 
+## Decisão de 25/11/2026 — interface na Devel
+
+| Decisão | Alternativa considerada | Justificativa |
+|---|---|---|
+| Na Devel, usar uma página web com campo de texto para colar o enunciado, reaproveitando a lógica do terminal (`analise.py`). | Executar o `main.py` no container e ler o resultado nos Logs, com o C01 fixo. | O guia da plataforma informa que o endereço do LLM só é acessível por aplicações dentro do ambiente e o portal só executa containers, sem terminal interativo. A página permite colar qualquer enunciado e testar a chamada real. |
+
+Limite a registrar: o enunciado do P0 descreve entrada pelo terminal. O terminal continua no código e com a mesma lógica, mas a chamada real ao Ollama institucional só acontece pela página. Confirmar com o suporte ou na avaliação se a página atende à exigência de entrada textual antes de tratar o Básico como concluído.
+
 ## Escolhas operacionais do assistente
 
 - Nome definitivo escolhido pelo aluno em 03/11/2026: **Descomplica Enunciado**, repositório `descomplica-enunciado`.
